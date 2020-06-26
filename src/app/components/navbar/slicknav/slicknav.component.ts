@@ -2,7 +2,7 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
 import { DomService } from '../../../services/dom.service';
 
 @Component({
-	selector: 'app-slicknav',
+	selector: 'app-navbar-slicknav',
 	templateUrl: './slicknav.component.html',
 	styleUrls: ['./slicknav.component.scss']
 })

@@ -1,0 +1,75 @@
+.hero__categories__all {
+	position: relative;
+	padding: 10px 25px 10px 40px;
+	background: #7fad39;
+	cursor: pointer;
+}
+.hero__categories__all:after {
+	position: absolute;
+	top: 9px;
+	right: 18px;
+	font-family: "ElegantIcons";
+	font-size: 18px;
+	content: "3";
+	color: #ffffff;
+}
+
+.hero__categories__all i {
+	margin-right: 10px;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.hero__categories__all span {
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.hero__categories ul {
+	padding-top: 10px;
+	padding-bottom: 12px;
+	padding-left: 40px;
+	border: 1px solid #ebebeb;
+	overflow: hidden;
+	transition: height ease-in-out 0.4s,
+				padding ease-in-out 0.4s;
+}
+.hero__categories ul.categoriesmenu_closed {
+	padding-top: 0;
+	padding-bottom: 0;
+	border-color: transparent;
+	transition: height ease-in-out 0.4s,
+				padding ease-in-out 0.4s,
+				border-color ease-in-out 0.4s;
+}
+
+.hero__categories ul li {
+	list-style: none;
+}
+
+.hero__categories ul li a {
+	display: block;
+	line-height: 39px;
+	font-size: 16px;
+	color: #1c1c1c;
+}
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.hero__categories__all {
+		padding: 10px 25px 10px 20px;
+	}
+
+	.hero__categories ul {
+		padding-left: 20px;
+	}
+}
+
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 991px) {
+	.hero__categories {
+		margin-bottom: 30px;
+	}
+}

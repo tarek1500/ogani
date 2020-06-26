@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-	selector: 'app-humberger',
+	selector: 'app-navbar-humberger',
 	templateUrl: './humberger.component.html',
 	styleUrls: ['./humberger.component.scss']
 })

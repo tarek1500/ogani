@@ -1,0 +1,26 @@
+.hero__item {
+	padding-left: 75px;
+	height: 431px;
+	display: flex;
+	align-items: center;
+}
+
+.hero__text span {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #7fad39;
+}
+
+.hero__text h2 {
+	margin: 10px 0;
+	line-height: 52px;
+	font-size: 46px;
+	font-weight: 700;
+	color: #252525;
+}
+
+.hero__text p {
+	margin-bottom: 35px;
+}
