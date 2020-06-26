@@ -1,0 +1,145 @@
+.featured {
+	padding-top: 80px;
+	padding-bottom: 40px;
+}
+
+.section-title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.section-title h2 {
+	position: relative;
+	color: #1c1c1c;
+	font-weight: 700;
+}
+.section-title h2:after {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	width: 80px;
+	height: 4px;
+	margin: 0 auto;
+	background: #7fad39;
+	content: "";
+}
+
+.featured__controls {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.featured__controls ul li {
+	position: relative;
+	margin-right: 25px;
+	display: inline-block;
+	list-style: none;
+	font-size: 18px;
+	color: #1c1c1c;
+	cursor: pointer;
+}
+.featured__controls ul li.active:after {
+	opacity: 1;
+}
+.featured__controls ul li:after {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #7fad39;
+	opacity: 0;
+	content: "";
+}
+.featured__controls ul li:last-child {
+	margin-right: 0;
+}
+
+.featured__item {
+	margin-bottom: 50px;
+}
+
+.featured__item:hover .featured__item__pic .featured__item__pic__hover {
+	bottom: 20px;
+}
+
+.featured__item__pic {
+	position: relative;
+	height: 270px;
+	background-position: center center;
+	overflow: hidden;
+}
+
+.featured__item__pic__hover {
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+	width: 100%;
+	text-align: center;
+	transition: all, 0.5s;
+}
+
+.featured__item__pic__hover li {
+	margin-right: 6px;
+	display: inline-block;
+	list-style: none;
+}
+.featured__item__pic__hover li:last-child {
+	margin-right: 0;
+}
+
+.featured__item__pic__hover li:hover a {
+	border-color: #7fad39;
+	background: #7fad39;
+}
+
+.featured__item__pic__hover li:hover a i {
+	color: #ffffff;
+	transform: rotate(360deg);
+}
+
+.featured__item__pic__hover li a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	background: #ffffff;
+	color: #1c1c1c;
+	transition: all, 0.5s;
+}
+
+.featured__item__pic__hover li a i {
+	position: relative;
+	transform: rotate(0);
+	transition: all, 0.3s;
+}
+
+.featured__item__text {
+	padding-top: 15px;
+	text-align: center;
+}
+
+.featured__item__text h6 {
+	margin-bottom: 10px;
+}
+
+.featured__item__text h6 a {
+	color: #252525;
+}
+
+.featured__item__text h5 {
+	font-weight: 700;
+	color: #252525;
+}
+
+/* Small Device = 320px */
+@media only screen and (max-width: 479px) {
+	.featured__controls ul li {
+		margin-bottom: 10px;
+	}
+}
