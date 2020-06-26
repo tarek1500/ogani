@@ -17,6 +17,7 @@ import { CategoryComponent } from './components/category/category.component';
 import { FeaturedComponent } from './components/featured/featured.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { LatestProductComponent } from './components/latest-product/latest-product.component';
+import { FromBlogComponent } from './components/from-blog/from-blog.component';
 
 @NgModule({
 	declarations: [
@@ -32,7 +33,8 @@ import { LatestProductComponent } from './components/latest-product/latest-produ
 		CategoryComponent,
 		FeaturedComponent,
 		BannerComponent,
-		LatestProductComponent
+		LatestProductComponent,
+		FromBlogComponent
 	],
 	imports: [
 		BrowserModule,
