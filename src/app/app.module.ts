@@ -15,6 +15,7 @@ import { SearchComponent as HeroSearchComponent } from './components/hero/search
 import { BannerComponent as HeroBannerComponent } from './components/hero/banner/banner.component';
 import { CategoryComponent } from './components/category/category.component';
 import { FeaturedComponent } from './components/featured/featured.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
 	declarations: [
@@ -28,7 +29,8 @@ import { FeaturedComponent } from './components/featured/featured.component';
 		HeroSearchComponent,
 		HeroBannerComponent,
 		CategoryComponent,
-		FeaturedComponent
+		FeaturedComponent,
+		BannerComponent
 	],
 	imports: [
 		BrowserModule,
