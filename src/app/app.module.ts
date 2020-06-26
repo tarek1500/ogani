@@ -18,6 +18,7 @@ import { FeaturedComponent } from './components/featured/featured.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { LatestProductComponent } from './components/latest-product/latest-product.component';
 import { FromBlogComponent } from './components/from-blog/from-blog.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
 	declarations: [
@@ -34,7 +35,8 @@ import { FromBlogComponent } from './components/from-blog/from-blog.component';
 		FeaturedComponent,
 		BannerComponent,
 		LatestProductComponent,
-		FromBlogComponent
+		FromBlogComponent,
+		FooterComponent
 	],
 	imports: [
 		BrowserModule,
