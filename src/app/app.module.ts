@@ -13,11 +13,6 @@ import { HeroComponent } from './components/hero/hero.component';
 import { CategoryComponent as HeroCategoryComponent } from './components/hero/category/category.component';
 import { SearchComponent as HeroSearchComponent } from './components/hero/search/search.component';
 import { BannerComponent as HeroBannerComponent } from './components/hero/banner/banner.component';
-import { CategoryComponent } from './components/category/category.component';
-import { FeaturedComponent } from './components/featured/featured.component';
-import { BannerComponent } from './components/banner/banner.component';
-import { LatestProductComponent } from './components/latest-product/latest-product.component';
-import { FromBlogComponent } from './components/from-blog/from-blog.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
@@ -31,11 +26,6 @@ import { FooterComponent } from './components/footer/footer.component';
 		HeroCategoryComponent,
 		HeroSearchComponent,
 		HeroBannerComponent,
-		CategoryComponent,
-		FeaturedComponent,
-		BannerComponent,
-		LatestProductComponent,
-		FromBlogComponent,
 		FooterComponent
 	],
 	imports: [
