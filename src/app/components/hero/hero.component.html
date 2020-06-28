@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" [ngClass]="{ 'hero-normal': router.url !== '/' }">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-lg-9">
 				<app-hero-search></app-hero-search>
-				<app-hero-banner></app-hero-banner>
+				<app-hero-banner *ngIf="router.url === '/'"></app-hero-banner>
 			</div>
 		</div>
 	</div>

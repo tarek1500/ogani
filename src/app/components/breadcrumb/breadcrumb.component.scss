@@ -1,0 +1,35 @@
+.breadcrumb-section {
+	padding: 45px 0 40px;
+	display: flex;
+	align-items: center;
+}
+
+.breadcrumb__text h2 {
+	font-size: 46px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.breadcrumb__option a {
+	position: relative;
+	margin-right: 20px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	color: #ffffff;
+}
+.breadcrumb__option a:after {
+	position: absolute;
+	top: 13px;
+	right: -12px;
+	width: 10px;
+	height: 1px;
+	background: #ffffff;
+	content: "";
+}
+
+.breadcrumb__option span {
+	display: inline-block;
+	font-size: 16px;
+	color: #ffffff;
+}

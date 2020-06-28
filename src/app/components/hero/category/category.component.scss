@@ -26,6 +26,10 @@
 	color: #ffffff;
 }
 
+.hero__categories.hero-normal {
+	position: relative;
+}
+
 .hero__categories ul {
 	padding-top: 10px;
 	padding-bottom: 12px;
@@ -34,6 +38,14 @@
 	overflow: hidden;
 	transition: height ease-in-out 0.4s,
 				padding ease-in-out 0.4s;
+}
+.hero__categories.hero-normal ul {
+	position: absolute;
+	top: 46px;
+	left: 0;
+	width: 100%;
+	background: #ffffff;
+	z-index: 9;
 }
 .hero__categories ul.categoriesmenu_closed {
 	padding-top: 0;

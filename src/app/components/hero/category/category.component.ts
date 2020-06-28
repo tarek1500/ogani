@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { DomService } from '../../../services/dom.service';
 
 @Component({
@@ -8,22 +9,29 @@ import { DomService } from '../../../services/dom.service';
 })
 export class CategoryComponent implements OnInit, AfterViewInit {
 	@ViewChild('categoriesMenu') categoriesRef: ElementRef;
-	categoriesOpened: boolean = true;
+	categoriesOpened: boolean;
 	categoriesHeight: number;
 
-	constructor(private domService: DomService) { }
+	constructor(public router: Router, private domService: DomService) { }
 
 	ngOnInit(): void { }
 
 	ngAfterViewInit() {
 		this.categoriesHeight = this.domService.getElementHeight(this.categoriesRef.nativeElement);
-		(<HTMLElement>this.categoriesRef.nativeElement).style.height = this.categoriesHeight.toString() + 'px';
+
+		this.router.events.subscribe(event => {
+			if (event instanceof NavigationEnd) this.changeCategoriesFlag(event.url === '/');
+		});
 	}
 
-	onHeroCategoriesClick(event) {
-		this.categoriesOpened = !this.categoriesOpened;
+	changeCategoriesFlag(flag: boolean) {
+		this.categoriesOpened = flag;
 
 		if (this.categoriesOpened) (<HTMLElement>this.categoriesRef.nativeElement).style.height = this.categoriesHeight.toString() + 'px';
 		else (<HTMLElement>this.categoriesRef.nativeElement).style.height = '0';
+	}
+
+	onHeroCategoriesClick(event) {
+		this.changeCategoriesFlag(!this.categoriesOpened);
 	}
 }

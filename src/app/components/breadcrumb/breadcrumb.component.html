@@ -1,0 +1,17 @@
+<section class="breadcrumb-section set-bg" [ngStyle]="{ backgroundImage: 'url(assets/img/breadcrumb.jpg)' }">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="breadcrumb__text">
+					<h2>{{ options.title }}</h2>
+					<div class="breadcrumb__option">
+						<ng-container *ngFor="let link of options.links; last as isLast">
+							<a *ngIf="!isLast; else elseBlock" href="{{ link.link }}">{{ link.title }}</a>
+							<ng-template #elseBlock><span>{{ link.title }}</span></ng-template>
+						</ng-container>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
