@@ -3,22 +3,22 @@ import { CommonModule } from '@angular/common';
 
 import { BlogDetailsRoutingModule } from './details-routing.module';
 import { BlogModule } from '../blog.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { BlogDetailsComponent } from './details.component';
 import { BlogDetailsHeroComponent } from './hero/hero.component';
 import { BlogDetailsItemComponent } from './item/item.component';
-import { BlogDetailsRelatedComponent } from './related/related.component';
 
 @NgModule({
 	declarations: [
 		BlogDetailsComponent,
 		BlogDetailsHeroComponent,
-		BlogDetailsItemComponent,
-		BlogDetailsRelatedComponent
+		BlogDetailsItemComponent
 	],
 	imports: [
 		CommonModule,
 		BlogDetailsRoutingModule,
-		BlogModule
+		BlogModule,
+		SharedModule
 	]
 })
 export class BlogDetailsModule { }

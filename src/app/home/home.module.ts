@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
+import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { HomeCategoryComponent } from './category/category.component';
 import { HomeFeaturedComponent } from './featured/featured.component';
 import { HomeBannerComponent } from './banner/banner.component';
 import { HomeLatestProductComponent } from './latest-product/latest-product.component';
-import { HomeFromBlogComponent } from './from-blog/from-blog.component';
 
 @NgModule({
 	declarations: [
@@ -15,12 +15,12 @@ import { HomeFromBlogComponent } from './from-blog/from-blog.component';
 		HomeCategoryComponent,
 		HomeFeaturedComponent,
 		HomeBannerComponent,
-		HomeLatestProductComponent,
-		HomeFromBlogComponent
+		HomeLatestProductComponent
 	],
 	imports: [
 		CommonModule,
-		HomeRoutingModule
+		HomeRoutingModule,
+		SharedModule
 	]
 })
 export class HomeModule { }
