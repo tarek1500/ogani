@@ -7,6 +7,10 @@ const routes: Routes = [
 	{
 		path: '',
 		component: BlogComponent
+	},
+	{
+		path: 'details',
+		loadChildren: () => import('./blog-details/blog-details.module').then(m => m.BlogDetailsModule)
 	}
 ];
 

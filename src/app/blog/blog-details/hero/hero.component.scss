@@ -1,0 +1,44 @@
+.blog-details-hero {
+	height: 350px;
+	display: flex;
+	align-items: center;
+}
+
+.blog__details__hero__text {
+	text-align: center;
+}
+
+.blog__details__hero__text h2 {
+	margin-bottom: 10px;
+	font-size: 46px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.blog__details__hero__text ul li {
+	position: relative;
+	margin-right: 45px;
+	display: inline-block;
+	list-style: none;
+	font-size: 16px;
+	color: #ffffff;
+}
+.blog__details__hero__text ul li:after {
+	position: absolute;
+	top: 0;
+	right: -26px;
+	content: "|";
+}
+.blog__details__hero__text ul li:last-child {
+	margin-right: 0;
+}
+.blog__details__hero__text ul li:last-child:after {
+	display: none;
+}
+
+/* Small Device = 320px */
+@media only screen and (max-width: 479px) {
+	.blog__details__hero__text h2 {
+		font-size: 24px;
+	}
+}

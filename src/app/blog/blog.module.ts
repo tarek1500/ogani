@@ -17,6 +17,9 @@ import { BlogItemsComponent } from './blog-items/blog-items.component';
 		CommonModule,
 		BlogRoutingModule,
 		SharedModule
+	],
+	exports: [
+		BlogSidebarComponent
 	]
 })
 export class BlogModule { }
