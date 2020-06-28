@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 	templateUrl: './search.component.html',
 	styleUrls: ['./search.component.scss']
 })
-export class SearchComponent implements OnInit {
+export class HeroSearchComponent implements OnInit {
 	constructor(public router: Router) { }
 
 	ngOnInit(): void { }

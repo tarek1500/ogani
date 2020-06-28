@@ -2,11 +2,11 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
 import mixitup from 'mixitup';
 
 @Component({
-	selector: 'app-featured',
+	selector: 'app-home-featured',
 	templateUrl: './featured.component.html',
 	styleUrls: ['./featured.component.scss']
 })
-export class FeaturedComponent implements OnInit, AfterViewInit {
+export class HomeFeaturedComponent implements OnInit, AfterViewInit {
 	@ViewChild('featuredContainer') featuredContainerRef: ElementRef;
 	@ViewChild('featuredItems') featuredItemRef: ElementRef;
 

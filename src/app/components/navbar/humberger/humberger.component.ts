@@ -5,7 +5,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 	templateUrl: './humberger.component.html',
 	styleUrls: ['./humberger.component.scss']
 })
-export class HumbergerComponent implements OnInit {
+export class NavbarHumbergerComponent implements OnInit {
 	@Input() humbergerOpened: boolean;
 	@Output() humbergerMenuOverlayClick: EventEmitter<MouseEvent>;
 

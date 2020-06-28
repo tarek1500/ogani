@@ -5,7 +5,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 	templateUrl: './header.component.html',
 	styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class NavbarHeaderComponent implements OnInit {
 	@Output() humbergerOpenClick: EventEmitter<MouseEvent>;
 
 	constructor() {

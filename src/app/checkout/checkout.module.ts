@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { CheckoutRoutingModule } from './checkout-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { CheckoutComponent } from './checkout.component';
-import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
-import { CheckoutOrderComponent } from './checkout-order/checkout-order.component';
+import { CheckoutFormComponent } from './form/form.component';
+import { CheckoutOrderComponent } from './order/order.component';
 
 @NgModule({
 	declarations: [

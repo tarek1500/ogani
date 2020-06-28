@@ -6,7 +6,7 @@ import { DomService } from '../../../services/dom.service';
 	templateUrl: './slicknav.component.html',
 	styleUrls: ['./slicknav.component.scss']
 })
-export class SlicknavComponent implements OnInit, AfterViewInit {
+export class NavbarSlicknavComponent implements OnInit, AfterViewInit {
 	@ViewChild('pagesMenu') pagesRef: ElementRef;
 	pagesOpened: boolean = false;
 	pagesHeight: number;
@@ -21,6 +21,7 @@ export class SlicknavComponent implements OnInit, AfterViewInit {
 	}
 
 	onPagesClick(event) {
+		event.preventDefault();
 		this.pagesOpened = !this.pagesOpened;
 
 		if (this.pagesOpened) (<HTMLElement>this.pagesRef.nativeElement).style.height = this.pagesHeight.toString() + 'px';

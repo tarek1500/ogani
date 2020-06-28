@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HumbergerComponent } from './humberger.component';
+import { NavbarHumbergerComponent } from './humberger.component';
 
-describe('HumbergerComponent', () => {
-	let component: HumbergerComponent;
-	let fixture: ComponentFixture<HumbergerComponent>;
+describe('NavbarHumbergerComponent', () => {
+	let component: NavbarHumbergerComponent;
+	let fixture: ComponentFixture<NavbarHumbergerComponent>;
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [ HumbergerComponent ]
+			declarations: [ NavbarHumbergerComponent ]
 		})
 		.compileComponents();
 	}));
 
 	beforeEach(() => {
-		fixture = TestBed.createComponent(HumbergerComponent);
+		fixture = TestBed.createComponent(NavbarHumbergerComponent);
 		component = fixture.componentInstance;
 		fixture.detectChanges();
 	});

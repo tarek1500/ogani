@@ -7,7 +7,7 @@ import { DomService } from '../../../services/dom.service';
 	templateUrl: './category.component.html',
 	styleUrls: ['./category.component.scss']
 })
-export class CategoryComponent implements OnInit, AfterViewInit {
+export class HeroCategoryComponent implements OnInit, AfterViewInit {
 	@ViewChild('categoriesMenu') categoriesRef: ElementRef;
 	categoriesOpened: boolean;
 	categoriesHeight: number;

@@ -4,15 +4,15 @@ import { CommonModule } from '@angular/common';
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContactComponent } from './contact.component';
 import { SharedModule } from '../shared/shared.module';
-import { ContactInfoComponent } from './contact-info/contact-info.component';
-import { MapComponent } from './map/map.component';
-import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ContactInfoComponent } from './info/info.component';
+import { ContactMapComponent } from './map/map.component';
+import { ContactFormComponent } from './form/form.component';
 
 @NgModule({
 	declarations: [
 		ContactComponent,
 		ContactInfoComponent,
-		MapComponent,
+		ContactMapComponent,
 		ContactFormComponent
 	],
 	imports: [

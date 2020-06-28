@@ -10,7 +10,7 @@ const routes: Routes = [
 	},
 	{
 		path: 'details',
-		loadChildren: () => import('./blog-details/blog-details.module').then(m => m.BlogDetailsModule)
+		loadChildren: () => import('./details/details.module').then(m => m.BlogDetailsModule)
 	}
 ];
 
