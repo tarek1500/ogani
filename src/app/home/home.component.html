@@ -1,5 +1,19 @@
 <app-home-category></app-home-category>
 <app-home-featured></app-home-featured>
 <app-home-banner></app-home-banner>
-<app-home-latest-product></app-home-latest-product>
+<section class="latest-product">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<app-latest-product [title]="latestProductsTitle" [width]="'360'" [maxWidth]="'2160'"></app-latest-product>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<app-latest-product [title]="topRatedProductsTitle" [width]="'360'" [maxWidth]="'2160'"></app-latest-product>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<app-latest-product [title]="reviewProductsTitle" [width]="'360'" [maxWidth]="'2160'"></app-latest-product>
+			</div>
+		</div>
+	</div>
+</section>
 <app-blog-related [title]="fromBlogTitle" [home]="true"></app-blog-related>

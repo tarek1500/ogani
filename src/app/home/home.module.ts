@@ -7,15 +7,13 @@ import { HomeComponent } from './home.component';
 import { HomeCategoryComponent } from './category/category.component';
 import { HomeFeaturedComponent } from './featured/featured.component';
 import { HomeBannerComponent } from './banner/banner.component';
-import { HomeLatestProductComponent } from './latest-product/latest-product.component';
 
 @NgModule({
 	declarations: [
 		HomeComponent,
 		HomeCategoryComponent,
 		HomeFeaturedComponent,
-		HomeBannerComponent,
-		HomeLatestProductComponent
+		HomeBannerComponent
 	],
 	imports: [
 		CommonModule,
