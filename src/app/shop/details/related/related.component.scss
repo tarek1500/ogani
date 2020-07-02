@@ -1,0 +1,103 @@
+.related-product {
+	padding-bottom: 30px;
+}
+
+.related__product__title {
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.related__product__title h2 {
+	position: relative;
+	font-weight: 700;
+	color: #1c1c1c;
+}
+.related__product__title h2:after {
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	width: 80px;
+	height: 4px;
+	margin: 0 auto;
+	background: #7fad39;
+	content: "";
+}
+
+.product__item {
+	margin-bottom: 50px;
+}
+
+.product__item:hover .product__item__pic .product__item__pic__hover {
+	bottom: 20px;
+}
+
+.product__item__pic {
+	position: relative;
+	height: 270px;
+	overflow: hidden;
+}
+
+.product__item__pic__hover {
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	transition: all, 0.5s;
+}
+
+.product__item__pic__hover li {
+	margin-right: 6px;
+	display: inline-block;
+	list-style: none;
+}
+.product__item__pic__hover li:last-child {
+	margin-right: 0;
+}
+
+.product__item__pic__hover li a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	background: #ffffff;
+	color: #1c1c1c;
+	transition: all, 0.5s;
+}
+.product__item__pic__hover li:hover a {
+	border-color: #7fad39;
+	background: #7fad39;
+}
+
+.product__item__pic__hover li a i {
+	position: relative;
+	transform: rotate(0);
+	transition: all, 0.3s;
+}
+.product__item__pic__hover li:hover a i {
+	color: #ffffff;
+	transform: rotate(360deg);
+}
+
+.product__item__text {
+	padding-top: 15px;
+	text-align: center;
+}
+
+.product__item__text h6 {
+	margin-bottom: 10px;
+}
+
+.product__item__text h6 a {
+	color: #252525;
+}
+
+.product__item__text h5 {
+	font-weight: 700;
+	color: #252525;
+}
