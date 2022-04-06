@@ -90,8 +90,22 @@
 .filter__option span:last-child {
 	margin: 0;
 }
+.filter__option span.active,
 .filter__option span:hover {
 	color: #7fad39;
+}
+
+.list-view .product__item {
+	display: flex;
+}
+
+.list-view .product__item .product__item__pic {
+	max-width: 270px;
+}
+
+.list-view .product__item .product__item__text {
+	margin-left: 15px;
+	padding: 0px;
 }
 
 .product__item {
@@ -100,6 +114,7 @@
 
 .product__item__pic {
 	position: relative;
+	width: 100%;
 	height: 270px;
 	overflow: hidden;
 }

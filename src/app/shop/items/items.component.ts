@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./items.component.scss']
 })
 export class ShopItemsComponent implements OnInit {
+	isGridView: boolean = true;
+
 	constructor() { }
 
 	ngOnInit(): void { }
