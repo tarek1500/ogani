@@ -1,13 +1,12 @@
-.categories__slider .col-lg-3 {
-	max-width: 100%;
-}
-
-.categories__slider.owl-carousel .owl-nav button {
+.categories ::ng-deep .owl-carousel .owl-nav div {
 	position: absolute;
 	top: 50%;
-	left: -35px;
+	left: 5px;
 	width: 30px;
 	height: 70px;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 0px;
 	border: 1px solid #ebebeb;
 	line-height: 70px;
 	text-align: center;
@@ -17,9 +16,9 @@
 	transform: translateY(-35px);
 }
 
-.categories__slider.owl-carousel .owl-nav button.owl-next {
+.categories ::ng-deep .owl-carousel .owl-nav div.owl-next {
 	left: auto;
-	right: -35px;
+	right: 5px;
 }
 
 .categories__item {
@@ -59,11 +58,6 @@
 
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
-	.categories__slider.owl-carousel .owl-nav {
-		text-align: center;
-		margin-top: 40px;
-	}
-
 	.categories__slider.owl-carousel .owl-nav button {
 		position: relative;
 		top: 0;

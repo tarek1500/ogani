@@ -4,29 +4,30 @@
 	color: #1c1c1c;
 }
 
-.latest-product__slider.owl-carousel .owl-nav {
+.latest-product__slider ::ng-deep .owl-carousel .owl-nav {
 	position: absolute;
 	top: -75px;
 	right: 20px;
+	margin: 0px;
 }
 
-.latest-product__slider.owl-carousel .owl-nav button {
+.latest-product__slider ::ng-deep .owl-carousel .owl-nav div {
 	width: 30px;
 	height: 30px;
+	margin: 0px;
 	margin-right: 10px;
+	padding: 0px;
+	border-radius: 0px;
 	border: 1px solid #e6e6e6;
 	line-height: 30px;
 	text-align: center;
 	font-size: 14px;
+	font-weight: 700;
 	background: #F3F6FA;
 	color: #636363;
 }
-.latest-product__slider.owl-carousel .owl-nav button:last-child {
+.latest-product__slider ::ng-deep .owl-carousel .owl-nav div:last-child {
 	margin-right: 0;
-}
-
-.latest-product__slider.owl-carousel .owl-nav button span {
-	font-weight: 700;
 }
 
 .latest-product__item {
@@ -64,7 +65,8 @@
 
 /* Medium Device = 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.latest-product__slider.owl-carousel .owl-nav {
+	.latest-product__slider ::ng-deep .owl-carousel .owl-nav {
+		top: -42px;
 		right: 0;
 	}
 }

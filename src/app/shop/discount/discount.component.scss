@@ -25,26 +25,17 @@
 	content: "";
 }
 
-.product__discount__slider .col-lg-4 {
-	max-width: 100%;
+.product__discount__slider.owl-carousel ::ng-deep .owl-dots {
+	margin-top: 32px;
 }
 
-.product__discount__slider.owl-carousel .owl-dots {
-	margin-top: 30px;
-	text-align: center;
-}
-
-.product__discount__slider.owl-carousel .owl-dots button {
+.product__discount__slider.owl-carousel ::ng-deep .owl-dots .owl-dot span {
 	width: 12px;
 	height: 12px;
-	margin-right: 12px;
 	border: 1px solid #b2b2b2;
-	border-radius: 50%;
+	background: white;
 }
-.product__discount__slider.owl-carousel .owl-dots button:last-child {
-	margin-right: 0;
-}
-.product__discount__slider.owl-carousel .owl-dots button.active {
+.product__discount__slider.owl-carousel ::ng-deep .owl-dots .owl-dot.active span {
 	border-color: #6f6f6f;
 	background: #707070;
 }

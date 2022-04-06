@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from '../shared/shared.module';
@@ -18,7 +19,8 @@ import { HomeBannerComponent } from './banner/banner.component';
 	imports: [
 		CommonModule,
 		HomeRoutingModule,
-		SharedModule
+		SharedModule,
+		CarouselModule
 	]
 })
 export class HomeModule { }

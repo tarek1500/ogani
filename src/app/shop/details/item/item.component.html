@@ -6,59 +6,28 @@
 					<div class="product__details__pic__item">
 						<img class="product__details__pic__item--large" src="{{ sliderImage }}" alt="">
 					</div>
-					<div class="product__details__pic__slider owl-carousel owl-loaded owl-drag">
-						<div class="owl-stage-outer">
-							<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1725px;">
-								<div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-1.jpg" src="assets/img/product/details/thumb-1.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-2.jpg" src="assets/img/product/details/thumb-2.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-3.jpg" src="assets/img/product/details/thumb-3.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-4.jpg" src="assets/img/product/details/thumb-4.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item active" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-1.jpg" src="assets/img/product/details/thumb-1.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item active" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-2.jpg" src="assets/img/product/details/thumb-2.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item active" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-3.jpg" src="assets/img/product/details/thumb-3.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item active" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-4.jpg" src="assets/img/product/details/thumb-4.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-1.jpg" src="assets/img/product/details/thumb-1.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-2.jpg" src="assets/img/product/details/thumb-2.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-3.jpg" src="assets/img/product/details/thumb-3.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
-								<div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;">
-									<img data-imgbigurl="assets/img/product/details/product-details-4.jpg" src="assets/img/product/details/thumb-4.jpg" alt="" (click)="onProductSliderClick($event)">
-								</div>
+					<owl-carousel-o [options]="customOptions">
+						<ng-template carouselSlide>
+							<div class="owl-item">
+								<img data-imgbigurl="assets/img/product/details/product-details-1.jpg" src="assets/img/product/details/thumb-1.jpg" alt="" (click)="onProductSliderClick($event)">
 							</div>
-						</div>
-						<div class="owl-nav disabled">
-							<button type="button" role="presentation" class="owl-prev">
-								<span aria-label="Previous">‹</span>
-							</button>
-							<button type="button" role="presentation" class="owl-next">
-								<span aria-label="Next">›</span>
-							</button>
-						</div>
-						<div class="owl-dots disabled">
-							<button role="button" class="owl-dot active"><span></span></button>
-						</div>
-					</div>
+						</ng-template>
+						<ng-template carouselSlide>
+							<div class="owl-item">
+								<img data-imgbigurl="assets/img/product/details/product-details-2.jpg" src="assets/img/product/details/thumb-2.jpg" alt="" (click)="onProductSliderClick($event)">
+							</div>
+						</ng-template>
+						<ng-template carouselSlide>
+							<div class="owl-item">
+								<img data-imgbigurl="assets/img/product/details/product-details-3.jpg" src="assets/img/product/details/thumb-3.jpg" alt="" (click)="onProductSliderClick($event)">
+							</div>
+						</ng-template>
+						<ng-template carouselSlide>
+							<div class="owl-item">
+								<img data-imgbigurl="assets/img/product/details/product-details-4.jpg" src="assets/img/product/details/thumb-4.jpg" alt="" (click)="onProductSliderClick($event)">
+							</div>
+						</ng-template>
+					</owl-carousel-o>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6">

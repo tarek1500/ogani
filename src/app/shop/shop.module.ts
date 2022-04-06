@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { ShopRoutingModule } from './shop-routing.module';
 import { SharedModule } from '../shared/shared.module';
@@ -18,7 +19,8 @@ import { ShopItemsComponent } from './items/items.component';
 	imports: [
 		CommonModule,
 		ShopRoutingModule,
-		SharedModule
+		SharedModule,
+		CarouselModule
 	]
 })
 export class ShopModule { }

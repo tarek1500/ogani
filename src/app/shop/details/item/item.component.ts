@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
 	selector: 'app-shop-details-item',
@@ -8,7 +9,25 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class ShopDetailsItemComponent implements OnInit {
 	@ViewChild('productDetails') productDetailsRef: ElementRef;
 	@ViewChild('productTabs') productTabsRef: ElementRef;
+
 	sliderImage: string = 'assets/img/product/details/product-details-1.jpg';
+	customOptions: OwlOptions = {
+		loop: true,
+		mouseDrag: false,
+		touchDrag: false,
+		pullDrag: false,
+		dots: false,
+		navSpeed: 1200,
+		margin: 25,
+		responsive: {
+			0: {
+				items: 4
+			}
+		},
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplaySpeed: 1200
+	}
 
 	constructor() { }
 
