@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopSidebarComponent implements OnInit {
 	latestProductsTitle: string = 'Latest Products';
+	value: number[] = [10, 540];
+	minValue: number = 10;
+	maxValue: number = 540;
 
 	constructor() { }
 
