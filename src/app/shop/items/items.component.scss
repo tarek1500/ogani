@@ -5,58 +5,25 @@
 }
 
 .filter__sort {
+	display: flex;
 	margin-bottom: 15px;
 }
 
-.filter__sort span {
-	display: inline-block;
+.filter__sort div {
+	margin: auto 8px auto 0px;
 	font-size: 16px;
 	color: #6f6f6f;
 }
 
-.filter__sort .nice-select {
-	height: 0;
+.filter__sort .custom-select {
+	width: auto;
 	padding-left: 18px;
 	padding-right: 30px;
-	float: none;
-	display: inline-block;
 	border: none;
 	border-radius: 0;
-	line-height: 0;
 	font-weight: 700;
-	font-size: 16px;
-	background-color: #fff;
 	color: #1c1c1c;
 	cursor: pointer;
-}
-.filter__sort .nice-select:after {
-	top: -5px;
-	right: 16px;
-	width: 8px;
-	height: 8px;
-	margin-top: 0;
-	border-bottom: 1.5px solid #1c1c1c;
-	border-right: 1.5px solid #1c1c1c;
-}
-
-.filter__sort .nice-select span {
-	color: #1c1c1c;
-}
-
-.filter__sort .nice-select .list {
-	top: 15px;
-	margin-top: 0;
-	border-radius: 0;
-}
-.filter__sort .nice-select.open .list {
-	opacity: 1;
-	pointer-events: auto;
-	transform: scale(1) translateY(0);
-}
-
-.filter__sort .nice-select .option {
-	min-height: 30px;
-	line-height: 30px;
 }
 
 .filter__found {
