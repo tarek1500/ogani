@@ -2,7 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-This project was made as a SPA from **Ogani** design, you can have a look over the design from this [link](https://colorlib.com/wp/template/ogani/).
+This project was made as a SPA from **Ogani** template, you can have a look over the design from this [link](https://colorlib.com/wp/template/ogani/).
+
+You can have a look on the SPA demo from this [link](https://ogani-template.herokuapp.com/)
 
 ## Development server
 
